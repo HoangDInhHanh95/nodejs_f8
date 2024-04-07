@@ -5,7 +5,9 @@ app.use(morgan('combined'));
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('hello word');
+  res.send(`
+  <h1 style="color:red"> hoang dinh hanh </h1>
+  `);
 })
 
 app.listen(port, () => {
