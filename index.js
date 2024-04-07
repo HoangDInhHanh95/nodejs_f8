@@ -1,9 +1,11 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const morgan = require('morgan');
+const app = express();
+app.use(morgan('combined'));
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('hoang dinh hanh 123')
+  res.send('hello word');
 })
 
 app.listen(port, () => {
